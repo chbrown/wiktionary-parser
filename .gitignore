@@ -1,6 +1,2 @@
-*~
 *.pyc
-\#*
-.\#*
-wikitools
-wiktionary_data
+wiktionary.egg-info
