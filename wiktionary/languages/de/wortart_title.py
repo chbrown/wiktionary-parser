@@ -2,7 +2,7 @@
 
 import re
 
-from wiktionary.wiktionary_utils.text_splitter import Block, Chopper, FillerBlock
+from wiktionary.utilities.text_splitter import Block, Chopper, FillerBlock
 from wiktionary.formating_type import RegexFT
 from wiktionary.patch import Patch
 from wiktionary.sections import ChildrenSection, FTSection, FillerSection, PatchedSection

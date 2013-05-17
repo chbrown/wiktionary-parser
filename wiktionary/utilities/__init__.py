@@ -24,7 +24,7 @@ import StringIO
 
 #from django.utils.html import escape
 
-from wiktionary.wiktionary_utils.text_splitter import Block, Splitter, FillerBlock as OldFillerBlock
+from wiktionary.utilities.text_splitter import Block, Splitter, FillerBlock as OldFillerBlock
 from wiktionary.alerts import NoTemplateMatchAlert
 
 class SquareBracketBlock(Block):

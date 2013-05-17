@@ -10,7 +10,7 @@ flektionsklassen as the values.
 a list of flektionsklassen.
 """
 
-from wiktionary.wiktionary_utils.levenshtein import levenshtein
+from wiktionary.utilities.levenshtein import levenshtein
 from .base import CASES, GENDERS, MASC, FEM, NEUT, NOM, AKK, DAT, GEN
 
 class Flexionsklasse(object):

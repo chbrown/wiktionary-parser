@@ -2,7 +2,7 @@
 Info for parsing german wiktionary pages.
 """
 
-from wiktionary.wiktionary_utils.text_splitter import Block
+from wiktionary.utilities.text_splitter import Block
 
 class ParsingError(Exception):
     pass

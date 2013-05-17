@@ -5,7 +5,7 @@ Info for parsing german wiktionary pages.
 Testing Level2Block chopping first:
 
 >>> import StringIO
->>> from wiktionary.wiktionary_utils.text_splitter import Chopper
+>>> from wiktionary.utilities.text_splitter import Chopper
 
 >>> file_obj = StringIO.StringIO()
 >>> file_obj.write(\"""== Test ==.  Here is a quick test == to make sure == that
@@ -44,7 +44,7 @@ import re
 from StringIO import StringIO
 import copy
 
-from wiktionary.wiktionary_utils.text_splitter import Block, Splitter, Chopper
+from wiktionary.utilities.text_splitter import Block, Splitter, Chopper
 from wiktionary.exceptions import InconsistentEntry
 from wiktionary.alerts import PatchRemainderAlert, NoFTMatchAlert, FixableAlert
 from .exceptions import FixingError, NotParsedYet

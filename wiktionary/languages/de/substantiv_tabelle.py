@@ -3,9 +3,9 @@
 import re
 from string import Template
 
-from wiktionary.wiktionary_utils.matching import MatchMatrix, CannotPair
-from wiktionary.wiktionary_utils.regex_splitter import chop
-from wiktionary.wiktionary_utils.formating import remove_enclosing_formating
+from wiktionary.utilities.matching import MatchMatrix, CannotPair
+from wiktionary.utilities.regex_splitter import chop
+from wiktionary.utilities.formating import remove_enclosing_formating
 
 from wiktionary.sections import Section, FillerSection, LeafSection
 from wiktionary.formating_type import RegexFT

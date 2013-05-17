@@ -43,7 +43,7 @@ however still needs to be parsed elsewhere.
 
 from xml.dom.minidom import parseString
 
-from wiktionary_utils.text_splitter import Splitter, Block
+from utilities.text_splitter import Splitter, Block
 from page import Page
 
 

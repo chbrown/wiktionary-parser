@@ -2,7 +2,7 @@ import re
 
 from wiktionary.sections import Level2Block, Level3Block, Section, FillerSection
 from wiktionary.exceptions import ParsingError
-from wiktionary.wiktionary_utils.text_splitter import Chopper, FillerBlock
+from wiktionary.utilities.text_splitter import Chopper, FillerBlock
 from wiktionary.page import Page
 from wiktionary.bots.utils import wikidatetime
 
