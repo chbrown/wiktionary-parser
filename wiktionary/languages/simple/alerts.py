@@ -1,4 +1,4 @@
-from wiktionary_parser.alerts import Alert, FixableAlert
+from wiktionary.alerts import Alert, FixableAlert
 
 class MissingTypeTemplate(Alert):
     description = 'The type template is missing.'

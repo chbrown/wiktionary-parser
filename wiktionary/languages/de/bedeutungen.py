@@ -2,9 +2,9 @@
 
 import re
 
-from wiktionary_parser.alerts import Alert
-from wiktionary_parser.sections import Section
-from wiktionary_parser.utils import wikitext_to_plaintext_with_alerts as w2p
+from wiktionary.alerts import Alert
+from wiktionary.sections import Section
+from wiktionary.utils import wikitext_to_plaintext_with_alerts as w2p
 
 class BedeutungenNumberAlert(Alert):
     description = 'The number of the meaning seems incorrect or the meaning does not have a number.'

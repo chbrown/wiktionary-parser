@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from wiktionary_parser.xml_parser import XMLPageParser
-from wiktionary_parser.languages.de.page import dePage
-from wiktionary_parser.languages.de.sections import deLanguageSection, deWortartSection, deWortartContentSection
-from wiktionary_parser.languages.de.substantiv_tabelle import SubstantivTabelleSection
-from wiktionary_parser.languages.de.alerts import SubstantivTabelleAlert, FixableSubstantivTabelleAlert
+from wiktionary.xml_parser import XMLPageParser
+from wiktionary.languages.de.page import dePage
+from wiktionary.languages.de.sections import deLanguageSection, deWortartSection, deWortartContentSection
+from wiktionary.languages.de.substantiv_tabelle import SubstantivTabelleSection
+from wiktionary.languages.de.alerts import SubstantivTabelleAlert, FixableSubstantivTabelleAlert
 
 import codecs
 
 xml_file = open('/Users/Ben/Web/wiktionary_data/dewiktionary-20090927-pages-articles.xml')
-alert_file = codecs.open('/Users/Ben/Web/wiktionary_parser/bots/st_alerts.txt', 'w', 'utf-8')
+alert_file = codecs.open('/Users/Ben/Web/wiktionary/bots/st_alerts.txt', 'w', 'utf-8')
 
 class Scan(object):
     def __init__(self, xml_file):

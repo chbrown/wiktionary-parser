@@ -2,10 +2,10 @@
 This module deals with processing the adjective conjugation forms.
 """
 
-from wiktionary_parser.sections import FTSection
-from wiktionary_parser.formating_type import RegexFT
+from wiktionary.sections import FTSection
+from wiktionary.formating_type import RegexFT
 
-from wiktionary_parser.languages.simple.alerts import AdjectiveConjugationAlert
+from wiktionary.languages.simple.alerts import AdjectiveConjugationAlert
 
 ADJ_CONJ_DOESNT_EXIST = ('Adjective conjugation does not exist.',)
 

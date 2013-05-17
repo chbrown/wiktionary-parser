@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from wiktionary_parser.xml_parser import XMLPageParser
-from wiktionary_parser.languages.de.page import dePage
-from wiktionary_parser.languages.de.sections import deLanguageSection, SubstantivTabelleSection #, SilbentrennungSection
-from wiktionary_parser.languages.de.lang_title import deLangTitleSection
-from wiktionary_parser.languages.de.wortart_title import deWortartTitlePieceSection
-from wiktionary_parser.alerts import NoFTMatchAlert, PatchRemainderAlert, LanguageMismatchAlert, WordTitleMismatchAlert, FixableAlert
+from wiktionary.xml_parser import XMLPageParser
+from wiktionary.languages.de.page import dePage
+from wiktionary.languages.de.sections import deLanguageSection, SubstantivTabelleSection #, SilbentrennungSection
+from wiktionary.languages.de.lang_title import deLangTitleSection
+from wiktionary.languages.de.wortart_title import deWortartTitlePieceSection
+from wiktionary.alerts import NoFTMatchAlert, PatchRemainderAlert, LanguageMismatchAlert, WordTitleMismatchAlert, FixableAlert
 
 import codecs
 

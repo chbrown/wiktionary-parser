@@ -1,6 +1,6 @@
-from wiktionary_parser.page import Page
-from wiktionary_parser.sections import Level2Block, Section, FillerSection
-from wiktionary_parser.wiktionary_utils.text_splitter import Chopper, FillerBlock
+from wiktionary.page import Page
+from wiktionary.sections import Level2Block, Section, FillerSection
+from wiktionary.wiktionary_utils.text_splitter import Chopper, FillerBlock
 from .sections import deLanguageSection
 
 class dePage(Page):

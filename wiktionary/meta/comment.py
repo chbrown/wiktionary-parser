@@ -8,9 +8,9 @@ from sqlalchemy import Column, Integer, String, Text, DateTime
 from sqlalchemy import ForeignKey, ForeignKeyConstraint
 from sqlalchemy.orm import relationship
 
-from wiktionary_parser.db import Base, Session
-from wiktionary_parser.page import Page
-from wiktionary_parser.meta.user import User
+from wiktionary.db import Base, Session
+from wiktionary.page import Page
+from wiktionary.meta.user import User
 
 logger = logging.getLogger(__name__)
 

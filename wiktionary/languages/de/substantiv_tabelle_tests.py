@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from wiktionary_parser.languages.de import substantiv_tabelle as st
-from wiktionary_parser.languages.de.page import dePage
-from wiktionary_parser.languages.de.word import deSubstantiv
+from wiktionary.languages.de import substantiv_tabelle as st
+from wiktionary.languages.de.page import dePage
+from wiktionary.languages.de.word import deSubstantiv
 
 sts = []
 

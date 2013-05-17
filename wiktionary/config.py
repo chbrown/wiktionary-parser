@@ -11,7 +11,7 @@ def setup_logging(level):
     formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
     ch.setFormatter(formatter)
     # Which packages do we want to log from.
-    packages = ('__main__', 'wiktionary_parser', 'wikitools',)
+    packages = ('__main__', 'wiktionary', 'wikitools',)
     for package in packages:
         logger = logging.getLogger(package)
         logger.addHandler(ch)

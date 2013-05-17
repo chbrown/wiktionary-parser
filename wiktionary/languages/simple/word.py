@@ -6,10 +6,10 @@ from sqlalchemy import Column, Integer, String, Text, DateTime
 from sqlalchemy import ForeignKey, ForeignKeyConstraint
 from sqlalchemy.orm import relationship
 
-from wiktionary_parser.word import Word
-from wiktionary_parser.languages.simple.templates import simpleTemplateBlock
+from wiktionary.word import Word
+from wiktionary.languages.simple.templates import simpleTemplateBlock
 
-from wiktionary_parser.db import Base, Session
+from wiktionary.db import Base, Session
 
 class simpleWord(Word):
 

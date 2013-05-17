@@ -2,10 +2,10 @@
 
 import wikitools
 
-from wiktionary_parser.languages.simple.page import simplePage
-from wiktionary_parser.languages.simple.alerts import UnknownType
-from wiktionary_parser.bots.einsatz import Einsatz
-from wiktionary_parser.bots.utils import delta
+from wiktionary.languages.simple.page import simplePage
+from wiktionary.languages.simple.alerts import UnknownType
+from wiktionary.bots.einsatz import Einsatz
+from wiktionary.bots.utils import delta
 
 xml_file = open('../../wiktionary_data/simplewiktionary-20110514-pages-articles.xml')
 

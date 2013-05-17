@@ -2,9 +2,9 @@
 This module deals with processing the noun plural forms.
 """
 
-from wiktionary_parser.sections import FTSection
-from wiktionary_parser.formating_type import RegexFT
-from wiktionary_parser.alerts import FixableAlert
+from wiktionary.sections import FTSection
+from wiktionary.formating_type import RegexFT
+from wiktionary.alerts import FixableAlert
 
 def get_data(section, groupdict):
     title = section.get_property('title')

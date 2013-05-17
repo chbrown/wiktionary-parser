@@ -3,8 +3,8 @@
 This example extracts a number of words from the wiktionary xml file.
 """
 
-from wiktionary_parser.xml_parser import XMLPageParser
-from wiktionary_parser.languages.de.page import dePage
+from wiktionary.xml_parser import XMLPageParser
+from wiktionary.languages.de.page import dePage
 
 xml_file = open('../../wiktionary_data/dewiktionary-20110504-pages-articles.xml')
 xml_parser = XMLPageParser(xml_file, dePage)

@@ -1,8 +1,8 @@
 from sqlalchemy import Column, Integer, String, Text
 from sqlalchemy import orm
 
-from wiktionary_parser.sections import Level2Block, ChildrenSection
-from wiktionary_parser.db import Base
+from wiktionary.sections import Level2Block, ChildrenSection
+from wiktionary.db import Base
 
 class Page(ChildrenSection, Base):
     """

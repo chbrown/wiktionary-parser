@@ -1,4 +1,4 @@
-from wiktionary_parser.alerts import Alert, FixableAlert
+from wiktionary.alerts import Alert, FixableAlert
 
 class SubstantivTabelleAlert(Alert):
     description = 'Substantiv Tabelle seems incorrect'

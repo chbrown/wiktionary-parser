@@ -2,13 +2,13 @@
 
 import re
 
-from wiktionary_parser.wiktionary_utils.text_splitter import Block, Chopper, FillerBlock
-from wiktionary_parser.formating_type import RegexFT
-from wiktionary_parser.patch import Patch
-from wiktionary_parser.sections import ChildrenSection, FTSection, FillerSection, PatchedSection
-from wiktionary_parser.exceptions import InconsistentEntry
-from wiktionary_parser.alerts import LanguageMismatchAlert
-from wiktionary_parser.languages.de.word import deSubstantiv
+from wiktionary.wiktionary_utils.text_splitter import Block, Chopper, FillerBlock
+from wiktionary.formating_type import RegexFT
+from wiktionary.patch import Patch
+from wiktionary.sections import ChildrenSection, FTSection, FillerSection, PatchedSection
+from wiktionary.exceptions import InconsistentEntry
+from wiktionary.alerts import LanguageMismatchAlert
+from wiktionary.languages.de.word import deSubstantiv
 
 allowed_types = [
     u'Substantiv', u'Vorname', u'Nachname', u'Eigenname', u'Toponym', u'Singularetantum',

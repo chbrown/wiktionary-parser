@@ -2,21 +2,21 @@
 
 import re
 
-from wiktionary_parser.formating_type import RegexFT
-from wiktionary_parser.sections import Level2Block, Level3Block, ChildrenSection, Block, FillerSection, FTSection, LeafSection, PatchedSection
-from wiktionary_parser.exceptions import ParsingError, InconsistentEntry
-from wiktionary_parser.wiktionary_utils.text_splitter import Chopper, FillerBlock
-from wiktionary_parser.utils import wikitext_to_plaintext_with_alerts as w2p
-from wiktionary_parser.patch import Patch
+from wiktionary.formating_type import RegexFT
+from wiktionary.sections import Level2Block, Level3Block, ChildrenSection, Block, FillerSection, FTSection, LeafSection, PatchedSection
+from wiktionary.exceptions import ParsingError, InconsistentEntry
+from wiktionary.wiktionary_utils.text_splitter import Chopper, FillerBlock
+from wiktionary.utils import wikitext_to_plaintext_with_alerts as w2p
+from wiktionary.patch import Patch
 
-from wiktionary_parser.languages.simple.wordtype_title import simpleWordTypeTitleSection
-from wiktionary_parser.languages.simple.word import simpleNoun, simpleVerb, simpleAdjective, simpleWord, simpleOther
-from wiktionary_parser.languages.simple.noun_plural import simpleNounPluralSection
-from wiktionary_parser.languages.simple.verb_conjugation import simpleVerbConjugationSection
-from wiktionary_parser.languages.simple.adjective_conjugation import simpleAdjectiveConjugationSection
-from wiktionary_parser.languages.simple.alerts import MissingTypeTemplate, EarlyExample, UnknownType, Level2_not_Level3
-from wiktionary_parser.languages.simple.templates import simpleTemplateBlock
-from wiktionary_parser.db import Session
+from wiktionary.languages.simple.wordtype_title import simpleWordTypeTitleSection
+from wiktionary.languages.simple.word import simpleNoun, simpleVerb, simpleAdjective, simpleWord, simpleOther
+from wiktionary.languages.simple.noun_plural import simpleNounPluralSection
+from wiktionary.languages.simple.verb_conjugation import simpleVerbConjugationSection
+from wiktionary.languages.simple.adjective_conjugation import simpleAdjectiveConjugationSection
+from wiktionary.languages.simple.alerts import MissingTypeTemplate, EarlyExample, UnknownType, Level2_not_Level3
+from wiktionary.languages.simple.templates import simpleTemplateBlock
+from wiktionary.db import Session
 
 level2_mapping = {
     # Valid Word Types

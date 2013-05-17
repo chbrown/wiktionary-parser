@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 >>> # The XMLPageParser is a utility to break the xml file down into pages.
->>> from wiktionary_parser.xml_parser import XMLPageParser
+>>> from wiktionary.xml_parser import XMLPageParser
 >>> # simpePage respresents a page from the simple.wiktionary.org site
->>> from wiktionary_parser.languages.simple.page import simplePage
+>>> from wiktionary.languages.simple.page import simplePage
 >>> xml_file = open('../../wiktionary_data/simplewiktionary-20120210-pages-articles.xml')
 >>> xml_parser = XMLPageParser(xml_file, simplePage)
 >>> from itertools import islice

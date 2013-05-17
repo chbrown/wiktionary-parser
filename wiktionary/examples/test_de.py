@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 u"""
 >>> import wikitools
->>> from wiktionary_parser.languages.de.page import dePage
+>>> from wiktionary.languages.de.page import dePage
 >>> page_title = 'Fisch'
 >>> site = wikitools.wiki.Wiki('http://de.wiktionary.org/w/api.php')
 >>> wikipage = wikitools.Page(site, page_title)

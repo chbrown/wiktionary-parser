@@ -3,8 +3,8 @@ from sqlalchemy import ForeignKey, ForeignKeyConstraint, UniqueConstraint
 from sqlalchemy.orm import relationship, backref
 from sqlalchemy import orm
 
-from wiktionary_parser.utils import wikitext_to_plaintext as w2p
-from wiktionary_parser.db import Base, Session
+from wiktionary.utils import wikitext_to_plaintext as w2p
+from wiktionary.db import Base, Session
 
 class Definition(Base):
     __tablename__ = "definitions"

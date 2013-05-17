@@ -24,8 +24,8 @@ import StringIO
 
 #from django.utils.html import escape
 
-from wiktionary_parser.wiktionary_utils.text_splitter import Block, Splitter, FillerBlock as OldFillerBlock
-from wiktionary_parser.alerts import NoTemplateMatchAlert
+from wiktionary.wiktionary_utils.text_splitter import Block, Splitter, FillerBlock as OldFillerBlock
+from wiktionary.alerts import NoTemplateMatchAlert
 
 class SquareBracketBlock(Block):
     start_pattern = '\[\['

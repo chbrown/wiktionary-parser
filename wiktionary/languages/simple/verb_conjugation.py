@@ -2,8 +2,8 @@
 This module deals with processing the verb conjugation forms.
 """
 
-from wiktionary_parser.sections import FTSection
-from wiktionary_parser.formating_type import RegexFT
+from wiktionary.sections import FTSection
+from wiktionary.formating_type import RegexFT
 
 class NormalVerbConjugation(object):
     

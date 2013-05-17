@@ -3,13 +3,13 @@
 import re
 from string import Template
 
-from wiktionary_parser.wiktionary_utils.matching import MatchMatrix, CannotPair
-from wiktionary_parser.wiktionary_utils.regex_splitter import chop
-from wiktionary_parser.wiktionary_utils.formating import remove_enclosing_formating
+from wiktionary.wiktionary_utils.matching import MatchMatrix, CannotPair
+from wiktionary.wiktionary_utils.regex_splitter import chop
+from wiktionary.wiktionary_utils.formating import remove_enclosing_formating
 
-from wiktionary_parser.sections import Section, FillerSection, LeafSection
-from wiktionary_parser.formating_type import RegexFT
-from wiktionary_parser.exceptions import NotParsedYet, FixingError
+from wiktionary.sections import Section, FillerSection, LeafSection
+from wiktionary.formating_type import RegexFT
+from wiktionary.exceptions import NotParsedYet, FixingError
 
 from .word import deSubstantiv
 from .alerts import SubstantivTabelleAlert, FixableSubstantivTabelleAlert, UnreadableAlert

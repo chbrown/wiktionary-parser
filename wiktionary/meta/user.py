@@ -7,8 +7,8 @@ import re
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, ForeignKeyConstraint
 from sqlalchemy.orm import relationship
 
-from wiktionary_parser.db import Base, Session
-from wiktionary_parser.page import Page
+from wiktionary.db import Base, Session
+from wiktionary.page import Page
 
 class User(Base):
 

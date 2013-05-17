@@ -2,10 +2,10 @@
 
 import re
 
-from wiktionary_parser.formating_type import RegexFT
-from wiktionary_parser.sections import Level2Block, Level3Block, ChildrenSection, Block, FillerSection, FTSection
-from wiktionary_parser.exceptions import ParsingError, InconsistentEntry
-from wiktionary_parser.wiktionary_utils.text_splitter import Chopper, FillerBlock
+from wiktionary.formating_type import RegexFT
+from wiktionary.sections import Level2Block, Level3Block, ChildrenSection, Block, FillerSection, FTSection
+from wiktionary.exceptions import ParsingError, InconsistentEntry
+from wiktionary.wiktionary_utils.text_splitter import Chopper, FillerBlock
 
 from .lang_title import deLangTitleSection
 from .wortart_title import deWortartTitleSection

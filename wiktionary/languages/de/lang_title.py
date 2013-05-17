@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from wiktionary_parser.formating_type import RegexFT
-from wiktionary_parser.sections import FTSection
-from wiktionary_parser.exceptions import InconsistentEntry
-from wiktionary_parser.alerts import WordTitleMismatchAlert
+from wiktionary.formating_type import RegexFT
+from wiktionary.sections import FTSection
+from wiktionary.exceptions import InconsistentEntry
+from wiktionary.alerts import WordTitleMismatchAlert
 
 def chop_prefix_get_data(section, groupdict):
     """

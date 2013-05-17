@@ -5,13 +5,13 @@ for defects and then correcting them with command-line user approval.
 
 import wikitools
 
-from wiktionary_parser.xml_parser import XMLPageParser
-from wiktionary_parser.languages.utils import get_page_class
+from wiktionary.xml_parser import XMLPageParser
+from wiktionary.languages.utils import get_page_class
 
-from wiktionary_parser.bots.utils import wikidatetime, delta, user_choice, YES, NO, QUIT, SKIP
-from wiktionary_parser.bots.memory import FixMemory
-from wiktionary_parser.bots.log import LogPage
-from wiktionary_parser.alerts import FixableAlert
+from wiktionary.bots.utils import wikidatetime, delta, user_choice, YES, NO, QUIT, SKIP
+from wiktionary.bots.memory import FixMemory
+from wiktionary.bots.log import LogPage
+from wiktionary.alerts import FixableAlert
 
 
 class EndEinsatz(Exception):

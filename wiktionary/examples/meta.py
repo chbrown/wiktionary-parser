@@ -5,13 +5,13 @@ Testing creation of pages.
 import logging
 from itertools import islice
 
-from wiktionary_parser.xml_parser import XMLPageParser
-from wiktionary_parser.db import Session, Base, engine
-from wiktionary_parser.languages.en.page import enPage
-from wiktionary_parser.page import Page
-from wiktionary_parser.meta.user import User
-from wiktionary_parser.meta.comment import Comment
-from wiktionary_parser.config import setup_logging
+from wiktionary.xml_parser import XMLPageParser
+from wiktionary.db import Session, Base, engine
+from wiktionary.languages.en.page import enPage
+from wiktionary.page import Page
+from wiktionary.meta.user import User
+from wiktionary.meta.comment import Comment
+from wiktionary.config import setup_logging
 
 def load_xml():
     session = Session()

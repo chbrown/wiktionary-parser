@@ -1,10 +1,10 @@
 import re
 
-from wiktionary_parser.sections import Level2Block, Level3Block, Section, FillerSection
-from wiktionary_parser.exceptions import ParsingError
-from wiktionary_parser.wiktionary_utils.text_splitter import Chopper, FillerBlock
-from wiktionary_parser.page import Page
-from wiktionary_parser.bots.utils import wikidatetime
+from wiktionary.sections import Level2Block, Level3Block, Section, FillerSection
+from wiktionary.exceptions import ParsingError
+from wiktionary.wiktionary_utils.text_splitter import Chopper, FillerBlock
+from wiktionary.page import Page
+from wiktionary.bots.utils import wikidatetime
 
 class LogPage(Page):
     """

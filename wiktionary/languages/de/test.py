@@ -1,7 +1,7 @@
 from difflib import Differ
 
-from wiktionary_parser.xml_parser import XMLPageParser
-from wiktionary_parser.languages.de.page import dePage
+from wiktionary.xml_parser import XMLPageParser
+from wiktionary.languages.de.page import dePage
 
 xml_file = open('../../data/dewiktionary-20090913-pages-articles.xml')
 

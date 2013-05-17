@@ -4,10 +4,10 @@ This example scans through the simple-english wiktionary file and displays
 an alerts that the parser raises.
 """
 
-from wiktionary_parser.xml_parser import XMLPageParser
-from wiktionary_parser.languages.simple.page import simplePage
+from wiktionary.xml_parser import XMLPageParser
+from wiktionary.languages.simple.page import simplePage
 
-from wiktionary_parser.languages.simple.alerts import UnknownType
+from wiktionary.languages.simple.alerts import UnknownType
 
 xml_file = open('../../wiktionary_data/simplewiktionary-20110514-pages-articles.xml')
 xml_parser = XMLPageParser(xml_file, simplePage)

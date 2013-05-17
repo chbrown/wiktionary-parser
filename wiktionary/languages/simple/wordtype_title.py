@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from wiktionary_parser.sections import FTSection
-from wiktionary_parser.formating_type import RegexFT
+from wiktionary.sections import FTSection
+from wiktionary.formating_type import RegexFT
 
 class simpleWordTypeTitleSection(FTSection):
 

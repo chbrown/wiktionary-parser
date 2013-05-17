@@ -1,4 +1,4 @@
-from wiktionary_parser.word import Word
+from wiktionary.word import Word
 
 class deWord(Word):
     
