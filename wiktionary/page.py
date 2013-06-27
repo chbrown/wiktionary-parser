@@ -1,8 +1,9 @@
 from sqlalchemy import Column, Integer, String, Text
 from sqlalchemy import orm
 
-from wiktionary.sections import Level2Block, ChildrenSection
+from wiktionary.sections import ChildrenSection
 from wiktionary.db import Base
+
 
 class Page(ChildrenSection, Base):
     """
@@ -34,7 +35,7 @@ class Page(ChildrenSection, Base):
     @orm.reconstructor
     def init_on_load(self):
         self.__init__(self.title, self.text, self.revision_id)
-        
+
     @classmethod
     def get(cls, session, title):
         if session is None:
@@ -60,4 +61,3 @@ class Page(ChildrenSection, Base):
 
     def page(self):
         return self
-    

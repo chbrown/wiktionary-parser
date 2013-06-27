@@ -6,7 +6,7 @@ from wiktionary.formating_type import RegexFT
 from wiktionary.sections import Level2Block, Level3Block, ChildrenSection, Block, FillerSection, FTSection, LeafSection, PatchedSection
 from wiktionary.exceptions import ParsingError, InconsistentEntry
 from wiktionary.utilities.text_splitter import Chopper, FillerBlock
-from wiktionary.utils import wikitext_to_plaintext_with_alerts as w2p
+from wiktionary.utilities import wikitext_to_plaintext_with_alerts as w2p
 from wiktionary.patch import Patch
 
 from wiktionary.languages.simple.wordtype_title import simpleWordTypeTitleSection

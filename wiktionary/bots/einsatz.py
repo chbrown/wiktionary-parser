@@ -6,7 +6,6 @@ for defects and then correcting them with command-line user approval.
 import wikitools
 
 from wiktionary.xml_parser import XMLPageParser
-from wiktionary.languages.utils import get_page_class
 
 from wiktionary.bots.utils import wikidatetime, delta, user_choice, YES, NO, QUIT, SKIP
 from wiktionary.bots.memory import FixMemory
@@ -128,7 +127,7 @@ class Einsatz(object):
             print(u'Changed Page %s.' % title)
         else:
             print(u'Would have changed page %s if live (%s)' % (title, comment))
-                        
+
     def repair_page(self, page_title, allowed_delta):
         if not self.online:
             raise StandardError('Must be online to repair page.')
@@ -172,7 +171,7 @@ class Einsatz(object):
             self.log_section.add_change(change)
         if commit:
             self.write_page(self.log_page.title, self.log_page.render(), 'updating log')
-                
+
     def scan_xml(self, max_no=None):
         # Check title hasn't been used before
         if self.title in self.log_page.einsatz_sections:
@@ -193,7 +192,7 @@ class Einsatz(object):
                 print all_counter
                 self.memory.save()
         self.memory.save()
-    
+
     def approval(self):
         # Get user approval for the various suggested changes
         for title, text_delta in self.memory.all_needing_approval():

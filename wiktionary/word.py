@@ -3,7 +3,7 @@ from sqlalchemy import ForeignKey, ForeignKeyConstraint, UniqueConstraint
 from sqlalchemy.orm import relationship, backref
 from sqlalchemy import orm
 
-from wiktionary.utils import wikitext_to_plaintext as w2p
+from wiktionary.utilities import wikitext_to_plaintext as w2p
 from wiktionary.db import Base, Session
 
 class Definition(Base):

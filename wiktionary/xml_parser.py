@@ -51,14 +51,14 @@ class PageBlock(Block):
     start_pattern = '<page>'
     stop_pattern = '</page>'
     slug = 'PageBlock'
-    
+
 
 class XMLPageParser(object):
 
     class CannotParse(Exception):
         pass
 
-    def __init__(self, xml, page_class, session=None):
+    def __init__(self, xml, page_class=Page, session=None):
         self.xml = xml
         self.pbc = PageBlock
         self.page_class = page_class
@@ -76,7 +76,6 @@ class XMLPageParser(object):
             page = self.page_class.get_and_update(
                 self.session, title, revision_id, text)
             yield page
-
 
     def from_titles(self, wanted_titles, session=None):
         for page_contents in self.xml_splitter:
@@ -104,7 +103,6 @@ class XMLPageParser(object):
 
     def get_node_id(self, node, tag):
         node = self.get_node_obj(node, tag)
-        import pdb
         for child in node.childNodes:
             if getattr(child, 'tagName', None) == 'id':
                 return child.childNodes[0].nodeValue
@@ -121,7 +119,3 @@ class XMLPageParser(object):
             import pdb
             pdb.set_trace()
             raise self.CannotParse('More than one match')
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()

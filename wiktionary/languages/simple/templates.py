@@ -1,4 +1,4 @@
-from wiktionary.utils import TemplateBlock
+from wiktionary.utilities import TemplateBlock
 
 nofunc = lambda p: ''
 
